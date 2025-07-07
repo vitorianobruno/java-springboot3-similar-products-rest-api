@@ -1,0 +1,29 @@
+server:
+  port: 5000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+external:
+  api:
+    base-url: http://localhost:3001
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+
+logging:
+  level:
+    org:
+      apache:
+        http: TRACE
+        tomcat: INFO
+    com:
+      project:
+        similar:
+          products: DEBUG
+    root: DEBUG
