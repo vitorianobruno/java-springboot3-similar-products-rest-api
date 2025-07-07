@@ -8,6 +8,7 @@ Spring Boot 3 Rest API that shows similar products related to the currently one.
 
 ### :bookmark_tabs: Swagger Documentation
 Swagger UI: http://localhost:5000/swagger-ui.html
+
 OpenAPI JSON: http://localhost:5000/v3/api-docs
 
 ### :coffee: Compiling
