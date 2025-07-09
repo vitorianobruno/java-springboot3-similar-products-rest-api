@@ -10,8 +10,30 @@ Spring Boot 3 Rest API that shows similar products related to the currently one.
 You can start the mocks containers and other needed infrastructure following this
 repository instructions: https://github.com/dalogax/backendDevTest
 
-![image](https://github.com/user-attachments/assets/c2142608-84c8-48da-a608-5a61f0c019ab)
-
+```
+                   +---------------------+
+                   |     Test            |
+                   |---------------------|
+                   | GET /product/{id}/  |
+                   |      similar        |
+                   +----------+----------+
+                              |
+                              | localhost:5000
+                              v
+                   +---------------------+
+                   |     yourApp         |
+                   +----------+----------+
+                              |
+                              | localhost:3001
+                              v
+                   +---------------------+
+                   |      Mocks          |
+                   |---------------------|
+                   | GET /product/{id}/  |
+                   |     similarids      |
+                   | GET /product/{id}   |
+                   +---------------------+
+```
 
 ### :bookmark_tabs: Swagger Documentation
 Swagger UI: http://localhost:5000/swagger-ui.html
