@@ -12,7 +12,7 @@ repository instructions: https://github.com/dalogax/backendDevTest
 
 ```
                    +---------------------+
-                   |     Test            |
+                   |        TEST         |
                    |---------------------|
                    | GET /product/{id}/  |
                    |      similar        |
@@ -21,13 +21,13 @@ repository instructions: https://github.com/dalogax/backendDevTest
                               | localhost:5000
                               v
                    +---------------------+
-                   |     yourApp         |
+                   |       API REST      |
                    +----------+----------+
                               |
                               | localhost:3001
                               v
                    +---------------------+
-                   |      Mocks          |
+                   |        MOCKS        |
                    |---------------------|
                    | GET /product/{id}/  |
                    |     similarids      |
